@@ -1,0 +1,340 @@
+/* Designing Style for iBOMMA app */
+
+html,
+body {
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+body {
+	background: linear-gradient(
+		to right,
+		#ffaf7b,
+		#ffd89b,
+		#fffde4,
+		#e6dada,
+		#ddefbb,
+		#e6dada,
+		#fffde4,
+		#ffd89b,
+		#ffaf7b
+	);
+	/* background: linear-gradient(to left, #ffd89b, #19547b ); */
+	/* background: linear-gradient(360deg, #4285F4, #34A853,  #FBBC05, #EA4335 ); */
+}
+
+#hr hr {
+	margin-bottom: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 4px solid #ffff01;
+}
+
+/* Styles for Header Tag */
+
+.header {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	background: linear-gradient(to right, #000, #111, #222, #333);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 60px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.header img {
+	width: 152px;
+	height: auto;
+}
+
+.header section {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	margin-right: 40px;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 20px;
+}
+
+.icons a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 6px;
+	font-family: 'Arial Rounded MT';
+}
+.header input {
+	border: none;
+	outline: none;
+	padding: 8px 10px 8px 15px;
+	border-radius: 20px;
+	margin: 30px 0px;
+	font-size: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+/* .header div:last-child{
+    margin-top: 30px;
+} */
+
+.header label {
+	background: #ffff01;
+	padding: 8px 8px 9px 8px;
+	border-radius: 20px;
+	font-size: 16px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	cursor: pointer;
+}
+
+/* Styles for Slogan Section (article)*/
+
+.article {
+	text-align: center;
+	margin: 60px;
+	color: #000;
+}
+
+.article div {
+	font-size: 300%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+.article p {
+	font-size: 100%;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styles for Footer */
+.footer {
+	color: #fff;
+	background: linear-gradient(to right, #000, #111, #111, #000);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px 60px;
+	border-radius: 10px;
+	margin-top: 60px;
+	font-family: 'Arial Rounded MT';
+}
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Styles for Grid Box */
+.grid-box {
+	display: grid;
+	width: 80%;
+	margin: auto;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-gap: 20px 20px;
+	padding: 40px;
+}
+
+/* Styles for Grid Images */
+.grid-box img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+/* Styles for Grid a tags*/
+.grid-box a {
+	color: #000;
+	text-decoration: none;
+	font-size: 120%;
+	font-family: 'Arial Rounded MT';
+}
+
+.grid-box span {
+	color: #ffff01;
+	background: #000;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.grid-box > section > div:last-child {
+	margin: 10px 0px;
+}
+
+.grid-box section:hover {
+	transform: scale(1.04);
+	transition: all 200ms linear;
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	background: #000;
+	text-align: center;
+	padding: 30px 0px;
+}
+
+/* Styles for Search Secttion*/
+.search div {
+	color: #fff;
+	font-size: 150%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+.search p {
+	color: #fff;
+	font-size: 80%;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search input {
+	border: none;
+	outline: none;
+	width: 30%;
+	height: 40px;
+	padding: 5px 20px 5px 20px;
+	border-radius: 20px;
+	margin: 5px 0;
+	font-size: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.search label {
+	background: #ffff01;
+	padding: 11px 10px 12px 10px;
+	border-radius: 20px;
+	font-size: 16px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	cursor: pointer;
+}
+
+.searchbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styles for Add ons*/
+.addons {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 40px;
+	font-family: 'Arial Rounded MT';
+}
+
+.addons h1 {
+	display: inline;
+}
+
+.addons i {
+	font-size: 30px;
+	padding: 10px;
+}
+
+/* About page */
+#about {
+	height: auto;
+	font-family: 'Arial Rounded MT';
+	padding: 30px 60px;
+}
+#about p {
+	padding: 2px;
+}
+
+/* Bug page */
+#bug {
+	height: auto;
+	font-family: 'Arial Rounded MT';
+	padding: 30px 60px;
+}
+#bug p {
+	padding: 2px;
+}
+#bug h2 {
+	color: #0000ff;
+}
+#bug a {
+	color: #ff0000;
+	text-decoration: none;
+}
+#bug a:hover {
+	text-decoration: 1px solid #0000ff underline;
+}
+
+#bug span {
+	font-size: 12px;
+}
+#bug div p {
+	margin: 0px;
+	font-size: 14px;
+}
+
+/* Contact page */
+#contact {
+	height: auto;
+	font-family: 'Arial Rounded MT';
+	padding: 30px 60px;
+}
+#contact p {
+	padding: 2px;
+}
+#contact h2 {
+	color: #0000ff;
+}
+#contact a {
+	color: #ff0000;
+	text-decoration: none;
+}
+#contact a:hover {
+	text-decoration: 1px solid #0000ff underline;
+}
+
+#contact span {
+	font-size: 14px;
+}
+#contact div p {
+	margin: 0px;
+	font-size: 14px;
+}
+
+/* DMCA page */
+#dmca {
+	height: auto;
+	font-family: 'Arial Rounded MT';
+	padding: 30px 60px;
+}
+#dmca p {
+	padding: 2px;
+}
+
+/* T&C page */
+#tc {
+	height: auto;
+	font-family: 'Arial Rounded MT';
+	padding: 30px 60px;
+}
+#tc p {
+	font-size: 14px;
+	padding: 2px;
+}
